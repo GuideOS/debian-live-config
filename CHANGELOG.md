@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ### Changed
 
-* power management: replace [laptop-mode-tools](https://packages.debian.org/bookworm/laptop-mode-tools) with [tlp](https://packages.debian.org/bookworm/tlp)
+* power management: replace [laptop-mode-tools](https://packages.debian.org/trixie/laptop-mode-tools) with [tlp](https://packages.debian.org/trixie/tlp)
 * extras: update user.js to v0.11.0
   * Don't expire cookies when the browser is closed
   * Enable Global Privacy Control preference
@@ -33,7 +33,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [v4.2.0](https://gitlab.com/nodiscc/debian-live-config/releases/tag/4.2.0) - 2024-12-17
 
 ### Added
-- system: package management: add [command-not-found](https://packages.debian.org/bookworm/command-not-found)
+- system: package management: add [command-not-found](https://packages.debian.org/trixie/command-not-found)
 
 ### Removed
 - office: remove [libreoffice-base](https://www.libreoffice.org/discover/base/) from the default installation
@@ -44,7 +44,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Changed
 - update all packages to latest versions, rebase on Debian 12.8.0
 - system: firmware: only install firmware for network devices and CPU microcode by default
-- network: install [keepassxc-browser](https://packages.debian.org/bookworm/webext-keepassxc-browser) Firefox extension from official Debian package instead of addons.mozilla.org
+- network: install [keepassxc-browser](https://packages.debian.org/trixie/webext-keepassxc-browser) Firefox extension from official Debian package instead of addons.mozilla.org
 - firefox: user.js: enable WebRender GPU-based rendering by default (improve performance)
 - skel: `bash_aliases`: `gss`: don't show repositories with status `ok`
 - system: enable `non-free-firmware` repositories section during image build (but exclude large or rarely used non-free firmware from the binary image to keep the ISO image under 2GB)
@@ -71,15 +71,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [v4.0.0](https://gitlab.com/nodiscc/debian-live-config/releases/tag/4.0.0) - 2023-07-13
 
-**Upgrade procedure:** Follow the official [Debian upgrade procedure](https://www.debian.org/releases/bookworm/amd64/release-notes/ch-upgrading.html), or backup your data, reinstall, and restore. Note: some changes will only take effect after creating a new user account. If upgrading without reinstalling, you will need to apply some of the changes below (notably add/remove packages) manually.
+**Upgrade procedure:** Follow the official [Debian upgrade procedure](https://www.debian.org/releases/trixie/amd64/release-notes/ch-upgrading.html), or backup your data, reinstall, and restore. Note: some changes will only take effect after creating a new user account. If upgrading without reinstalling, you will need to apply some of the changes below (notably add/remove packages) manually.
 
 ### Added
 - config: add the [`non-free-firmware`](https://wiki.debian.org/Firmware) component to APT sources list
-- packages: utility: add [alarm-clock-applet](https://packages.debian.org/bookworm/alarm-clock-applet)
+- packages: utility: add [alarm-clock-applet](https://packages.debian.org/trixie/alarm-clock-applet)
 - skel: bash: add an alias `gss` to show the status of git repositories under `~/GIT` using `mgitstatus`
 
 ### Changed
-- rebase on [Debian 12 "Bookworm"](https://www.debian.org/releases/bookworm/)
+- rebase on [Debian 12 "Bookworm"](https://www.debian.org/releases/trixie/)
 - config: enable tap-to-click by default for all touchpads
 - config: xfce4-panel: set clock panel plugin font to Roboto 9, set clock format to `HH:MM`
 - config: autostart: disable alarm-clock-applet autostart

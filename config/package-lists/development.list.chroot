@@ -125,7 +125,7 @@ python3-venv
 python3-all-dev
 
 #Section: Live system
-live-build
+#live-build
 #Alt: debootstrap
 #Alt: live-config-doc
 #Alt: live-manual-pdf
@@ -134,7 +134,7 @@ live-build
 #Alt: blends-tasks
 #Alt: live-task-lxde
 #Alt: live-task-base
-#Alt: live-task-cinnamon
+live-task-cinnamon
 #Alt: live-task-extra
 #Alt: live-task-gnome
 #Alt: live-task-kde
